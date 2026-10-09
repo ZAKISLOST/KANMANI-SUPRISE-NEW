@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>For Kanmani 🌺</title>
+  <meta name="theme-color" content="#17122b">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="petals" aria-hidden="true"></div>
+
+  <audio id="bgMusic" loop preload="auto">
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+
+  <main>
+    <section class="hero">
+      <div class="moon"></div>
+      <div class="hero-content">
+        <p class="eyebrow">A little garden, made just for you</p>
+        <h1>For my <span>Kanmani</span> 🌺</h1>
+        <p class="lead">I couldn't give you an entire garden in my hands… so I made you one here.</p>
+        <button class="glow-btn" id="beginBtn">Enter the garden <span>→</span></button>
+      </div>
+      <div class="scroll-hint">scroll gently ↓</div>
+    </section>
+
+    <section class="story">
+      <div class="section-head">
+        <p class="eyebrow">December 25, 2025 · 12:30 AM</p>
+        <h2>The night I first noticed you</h2>
+      </div>
+      <div class="story-grid">
+        <div class="photo-card tilt">
+          <img src="assets/night-dome.jpg" alt="A glowing night scene">
+          <span class="photo-caption">Some nights become memories before we even know it.</span>
+        </div>
+        <div class="copy">
+          <p>It was Christmas day. You were there with your friends, and I could only see you from afar.</p>
+          <p>That crocheted overcoat. The black dress. And that completely mismatched pink shawl that somehow made you look even cuter.</p>
+          <p>When I finally came closer, I could mostly see your eyes. I knew you were a little panicked, but I wanted to talk to you while still being respectful.</p>
+          <div class="flower-note">🌺 <span>And somehow, that little moment became the beginning of my favorite story.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="garden-section">
+      <div class="garden-backdrop">
+        <div class="stars"></div>
+        <div class="garden-copy">
+          <p class="eyebrow">One memory I keep close</p>
+          <h2>You took my hand.</h2>
+          <p>You led the way, and for that moment I felt so adored by you. It was simple. But I remember how it felt.</p>
+          <button class="flower-btn" data-message="That tiny moment still feels huge to me.">Touch the plumeria 🌺</button>
+        </div>
+        <div class="floating-flower f1">🌺</div>
+        <div class="floating-flower f2">🌸</div>
+        <div class="floating-flower f3">🌺</div>
+      </div>
+    </section>
+
+    <section class="memories">
+      <div class="section-head">
+        <p class="eyebrow">Little pieces of us</p>
+        <h2>The nights that lasted until morning</h2>
+      </div>
+      <div class="memory-grid">
+        <article class="memory-card">
+          <img src="assets/garden-walk.jpg" alt="A peaceful tree-lined night walkway">
+          <div>
+            <span>01 · Late-night talks</span>
+            <h3>Laughing until our stomachs hurt.</h3>
+            <p>Some of my favorite nights were the ones where we talked until morning and somehow never ran out of things to say.</p>
+          </div>
+        </article>
+        <article class="memory-card">
+          <img src="assets/blue-petals.jpg" alt="Blue-purple petals scattered on a path">
+          <div>
+            <span>02 · Something you may not know</span>
+            <h3>I kissed your forehead once.</h3>
+            <p>And I kept that little secret in my heart because it meant more to me than I knew how to explain.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="eyes">
+      <div class="eyes-inner">
+        <p class="eyebrow">And then there are your eyes…</p>
+        <h2>Those dreamy eyes.</h2>
+        <p>I don't think you know how often I notice them. There is something about them that makes everything around me feel quieter.</p>
+      </div>
+    </section>
+
+    <section class="finale">
+      <div class="bloom" id="bloom"></div>
+      <div class="final-card">
+        <p class="eyebrow">One last thing, Kanmani</p>
+        <h2>I want you to feel safe, loved, and adored.</h2>
+        <p>I realized I loved you not because I could look at you carelessly, but because I could look at you with so much respect. I want you to feel safe around me, always.</p>
+        <p>And even if you hated me for a hundred years, I don't think my heart would ever learn how to hate you back.</p>
+        <p class="signature">— someone who would still choose your smile 🌺</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="close" id="closeModal" aria-label="Close">×</button>
+      <div class="modal-flower">🌺</div>
+      <p id="modalText"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    const beginBtn = document.getElementById("beginBtn");
+    const bgMusic = document.getElementById("bgMusic");
+
+    beginBtn.addEventListener("click", () => {
+      bgMusic.play().catch(() => {});
+    });
+  </script>
+</body>
+</html>
